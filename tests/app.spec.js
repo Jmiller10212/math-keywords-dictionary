@@ -51,3 +51,14 @@ test('legacy saved library upgrades once and retains custom data',async({page})=
  await page.reload();await expect(page.locator('.card')).toHaveCount(39);expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('math-keywords-dictionary:v1')).entries[0].definition)).toBe('My customized definition');
  await page.getByRole('button',{name:'Delete Circle area',exact:true}).click();await page.locator('#delete-confirm').click();await page.reload();await expect(page.locator('.card')).toHaveCount(38);
 });
+
+test('an already open cached v1 app upgrades without closing or losing entries',async({page})=>{
+ const oldWorker=`const CACHE='math-keywords-dictionary-v1';self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(async c=>{const r=await fetch('./index.html');const html=(await r.text()).replace('<button data-type="formula" aria-pressed="false">Math Formulas</button>','');await c.put('./',new Response(html,{headers:{'Content-Type':'text/html'}}));await c.put('./index.html',new Response(html,{headers:{'Content-Type':'text/html'}}));})));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));`;
+ const {readFile,writeFile,utimes}=await import('node:fs/promises');const workerPath=new URL('../sw.js',import.meta.url);const currentWorker=await readFile(workerPath,'utf8');await writeFile(workerPath,oldWorker);try{
+ await page.goto('/');await page.evaluate(async()=>{await navigator.serviceWorker.ready;});await page.reload();await page.waitForFunction(()=>!!navigator.serviceWorker.controller);await expect(page.locator('[data-type=formula]')).toHaveCount(0);
+ await page.evaluate(()=>localStorage.setItem('upgrade-check','preserved'));
+ await writeFile(workerPath,currentWorker);await utimes(workerPath,new Date(),new Date(Date.now()+2000));await page.evaluate(async()=>{const changed=new Promise(resolve=>navigator.serviceWorker.addEventListener('controllerchange',resolve,{once:true}));const r=await navigator.serviceWorker.getRegistration();await r.update();await changed;});
+ await page.waitForFunction(async()=>{const r=await navigator.serviceWorker.getRegistration();return r.active?.state==='activated'&&!(await caches.keys()).includes('math-keywords-dictionary-v1');});
+ await page.reload();await expect(page.getByRole('button',{name:'Math Formulas',exact:true})).toBeVisible();expect(await page.evaluate(()=>localStorage.getItem('upgrade-check'))).toBe('preserved');await expect(page.locator('.card')).toHaveCount(39);
+ }finally{await writeFile(workerPath,currentWorker);}
+});

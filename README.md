@@ -35,7 +35,7 @@ Search covers all entry fields. Print uses the currently filtered entries and re
 
 ## Offline and updates
 
-Service worker scope is this project folder; its cache uses a dictionary-specific prefix. The first successful online visit caches all app files and starter entries. Saved user entries remain in localStorage. For a release, bump CACHE in sw.js whenever site files change. A new worker waits until all old app tabs/windows are closed, then takes over on the next launch. Reopen online first to receive an update. Export before clearing storage or uninstalling. Do not use Clear site data as a normal update method.
+Service worker scope is this project folder; its cache uses a dictionary-specific prefix. The first successful online visit caches all app files and starter entries. Saved user entries remain in localStorage. For a release, bump CACHE in sw.js whenever site files change. A new worker activates after its complete offline shell is cached. Online navigations check for the deployed page; offline navigations use the cached shell. Reload online to receive an update. Export before clearing storage or uninstalling. Do not use Clear site data as a normal update method.
 
 ## Project files
 
@@ -47,4 +47,4 @@ Official setup references: [GitHub Pages publishing source](https://docs.github.
 
 The Math Formulas tab includes perimeter, area, volume, distance, mean, percentage and circle formulas. The editor adapts labels and required fields to the selected type. Categories accept your own text and suggest Geometry, Arithmetic, Measurement and Algebra. Search includes notation, symbol meanings, usage and notes. Print includes every formula detail in the filtered view.
 
-On the first upgrade of a version 1 saved library, missing starter formulas are added without overwriting existing IDs or same-type names; the resulting library is saved as version 2 under the existing storage key. Subsequent reloads preserve deletions. Importing an older file uses its contents exactly for Replace, or the normal conflict rules for Merge. Export before updating if you want your own additional backup. The offline cache release is v2; close all dictionary windows and reopen online to receive it.
+On the first upgrade of a version 1 saved library, missing starter formulas are added without overwriting existing IDs or same-type names; the resulting library is saved as version 2 under the existing storage key. Subsequent reloads preserve deletions. Importing an older file uses its contents exactly for Replace, or the normal conflict rules for Merge. Export before updating if you want your own additional backup. The offline cache release is v3; reload online to receive it.
