@@ -10,12 +10,16 @@ From this folder run `python -m http.server 4180`, then open http://localhost:41
 
 1. Create a new repository such as `math-keywords-dictionary` in your GitHub account. Do not use the Math Practice Hub repository. GitHub Pages availability for private repositories depends on your plan; a public repository exposes the site source and starter terms.
 2. Upload this folder's site files at the repository root, including icons, manifest.webmanifest, seed.json, and .nojekyll. Do not upload node_modules or personal dictionary exports. The files at the repository root must include index.html (avoid an extra enclosing folder).
-3. Alternatively, initialize this folder with `git init`, commit the files, set the new repository remote, and push a main branch. No repository or remote has been created by this project.
+3. Alternatively, initialize this folder with `git init`, commit the files, set the new repository remote, and push a main branch. This checkout uses the separate repository linked below.
 4. In the new repository choose Settings → Pages → Deploy from a branch → main → /(root), then Save.
 5. After GitHub reports a successful deployment, open `https://YOUR-ACCOUNT.github.io/math-keywords-dictionary/`. Confirm the title and starter terms, add a temporary entry, export/import it, reload, and test offline in Chrome DevTools. Relative asset paths support a repository subpath.
 6. In desktop Chrome open the site, then use the address-bar install icon or Chrome menu → Cast, save, and share → Install page as app (wording varies). An Install app button appears when Chrome offers installation. Launch the installed app and repeat the offline check.
 
-This project has not been published. Publishing through an assistant requires authorization for the chosen GitHub account/repository.
+Repository: https://github.com/Jmiller10212/math-keywords-dictionary
+
+GitHub Pages: https://jmiller10212.github.io/math-keywords-dictionary/
+
+Pages is configured to deploy from main at the repository root. Commit and push changes in this folder to update this dictionary.
 
 ## Your entries and backups
 
