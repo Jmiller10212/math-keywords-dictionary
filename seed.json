@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "v-estimate",
+      "type": "vocabulary",
+      "term": "estimate",
+      "category": "Estimation",
+      "definition": "A reasonable answer close to the exact value.",
+      "example": "Estimate 198 + 304 using 200 + 300 = 500.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-round",
+      "type": "vocabulary",
+      "term": "round",
+      "category": "Estimation",
+      "definition": "Replace a number with a nearby value at a chosen place.",
+      "example": "Round 347 to the nearest ten: 350.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-expression",
+      "type": "vocabulary",
+      "term": "expression",
+      "category": "Algebra",
+      "definition": "Numbers, variables, and operations that represent a value, without an equals sign.",
+      "example": "8 + 4 and 3 \u00d7 n are expressions.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-equation",
+      "type": "vocabulary",
+      "term": "equation",
+      "category": "Algebra",
+      "definition": "A statement that two expressions have equal values.",
+      "example": "8 + 4 = 12 is an equation.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-approximately",
+      "type": "vocabulary",
+      "term": "approximately",
+      "category": "Estimation",
+      "definition": "Close to a value, but not necessarily exact. The symbol \u2248 means approximately equal to.",
+      "example": "19.8 \u2248 20.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-place-value",
+      "type": "vocabulary",
+      "term": "place value",
+      "category": "Number sense",
+      "definition": "The value a digit has because of its position in a number.",
+      "example": "In 4,582, the 5 represents 500.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-sum",
+      "type": "vocabulary",
+      "term": "sum",
+      "category": "Operations",
+      "definition": "The result of addition.",
+      "example": "The sum of 7 and 5 is 12.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-difference",
+      "type": "vocabulary",
+      "term": "difference",
+      "category": "Operations",
+      "definition": "The result of subtraction; also the distance between two numbers.",
+      "example": "The difference between 12 and 7 is 5.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-product",
+      "type": "vocabulary",
+      "term": "product",
+      "category": "Operations",
+      "definition": "The result of multiplication.",
+      "example": "The product of 6 and 4 is 24.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-quotient",
+      "type": "vocabulary",
+      "term": "quotient",
+      "category": "Operations",
+      "definition": "The result of division.",
+      "example": "The quotient of 20 divided by 5 is 4.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-factor",
+      "type": "vocabulary",
+      "term": "factor",
+      "category": "Operations",
+      "definition": "A number multiplied by another number to make a product.",
+      "example": "3 and 4 are factors of 12 because 3 \u00d7 4 = 12.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-fraction",
+      "type": "vocabulary",
+      "term": "fraction",
+      "category": "Fractions",
+      "definition": "A number that can represent part of a whole, part of a set, or a division.",
+      "example": "3/4 means three one-fourth units.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-numerator",
+      "type": "vocabulary",
+      "term": "numerator",
+      "category": "Fractions",
+      "definition": "The top number in a fraction; it counts the parts being described.",
+      "example": "In 3/4, the numerator is 3.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-denominator",
+      "type": "vocabulary",
+      "term": "denominator",
+      "category": "Fractions",
+      "definition": "The bottom number in a fraction; it names how many equal parts make one whole.",
+      "example": "In 3/4, the denominator is 4.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-decimal",
+      "type": "vocabulary",
+      "term": "decimal",
+      "category": "Number sense",
+      "definition": "A way to write numbers using place values based on powers of ten, including parts of one.",
+      "example": "0.35 is thirty-five hundredths.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-equal",
+      "type": "vocabulary",
+      "term": "equal",
+      "category": "Relationships",
+      "definition": "Having the same value or amount.",
+      "example": "5 + 2 and 10 \u2212 3 are equal.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-compare",
+      "type": "vocabulary",
+      "term": "compare",
+      "category": "Relationships",
+      "definition": "Look at amounts or values to describe how they are alike or different.",
+      "example": "Compare 0.6 and 0.45: 0.6 is greater.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-multiple",
+      "type": "vocabulary",
+      "term": "multiple",
+      "category": "Operations",
+      "definition": "A product of a number and a whole number.",
+      "example": "0, 6, 12, and 18 are multiples of 6.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "k-fewer",
+      "type": "keyword",
+      "term": "fewer",
+      "category": "Comparison",
+      "definition": "A smaller number of items.",
+      "example": "Mia has 3 fewer stickers than Leo. Leo has 10. Mia has 10 \u2212 3 = 7.",
+      "clue": "Often describes a subtraction or comparison relationship.",
+      "caveat": "If Mia has 7 and that is 3 fewer than Leo, find Leo with 7 + 3 = 10."
+    },
+    {
+      "id": "k-difference",
+      "type": "keyword",
+      "term": "difference",
+      "category": "Comparison",
+      "definition": "How far apart two amounts are.",
+      "example": "There are 12 blue beads and 8 red beads. The difference is 12 \u2212 8 = 4.",
+      "clue": "Often points to the gap between two values.",
+      "caveat": "A missing starting value can require addition: a number has a difference of 4 from 8; it could be 12 or 4 depending on context."
+    },
+    {
+      "id": "k-remaining",
+      "type": "keyword",
+      "term": "remaining",
+      "category": "Change",
+      "definition": "What is left after something happens.",
+      "example": "12 apples, 5 eaten: 12 \u2212 5 = 7 remaining.",
+      "clue": "Often appears in a take-away situation.",
+      "caveat": "If 7 remain after 5 were eaten, the original amount is 7 + 5 = 12."
+    },
+    {
+      "id": "k-total",
+      "type": "keyword",
+      "term": "total",
+      "category": "Combining",
+      "definition": "The complete amount in a situation.",
+      "example": "4 red and 6 blue marbles make a total of 10.",
+      "clue": "May suggest combining parts with addition or finding equal-group totals with multiplication.",
+      "caveat": "The total may already be known. If the total is 10 and one part is 4, find the other with subtraction."
+    },
+    {
+      "id": "k-each",
+      "type": "keyword",
+      "term": "each",
+      "category": "Equal groups",
+      "definition": "Refers to every member or group individually.",
+      "example": "4 bags with 3 apples each contain 4 \u00d7 3 = 12 apples.",
+      "clue": "Often marks equal groups; multiplication or division may help.",
+      "caveat": "12 apples shared into 4 bags means 12 \u00f7 4 = 3 each. Read which quantity is missing."
+    },
+    {
+      "id": "k-altogether",
+      "type": "keyword",
+      "term": "altogether",
+      "category": "Combining",
+      "definition": "All the amounts considered together.",
+      "example": "2 shells and 5 shells are 7 shells altogether.",
+      "clue": "Often describes a combined amount.",
+      "caveat": "If the altogether amount is given, finding a missing part can require subtraction."
+    },
+    {
+      "id": "k-shared-equally",
+      "type": "keyword",
+      "term": "shared equally",
+      "category": "Equal groups",
+      "definition": "Split into groups of the same size.",
+      "example": "18 cards shared equally among 3 people gives 6 each.",
+      "clue": "Division often finds a group size or number of groups.",
+      "caveat": "If you know 3 people each received 6, multiplication finds the original total."
+    },
+    {
+      "id": "k-more-than",
+      "type": "keyword",
+      "term": "more than",
+      "category": "Comparison",
+      "definition": "An amount greater than another amount.",
+      "example": "Sam has 4 more than Ana. Ana has 6, so Sam has 10.",
+      "clue": "Often expresses an additive comparison.",
+      "caveat": "If Sam has 10, finding Ana requires 10 \u2212 4. \u201cTimes as many\u201d describes multiplication instead."
+    },
+    {
+      "id": "k-per",
+      "type": "keyword",
+      "term": "per",
+      "category": "Rates",
+      "definition": "For every one unit of something.",
+      "example": "3 dollars per notebook: 4 notebooks cost 12 dollars.",
+      "clue": "Connects two quantities through a rate.",
+      "caveat": "You may multiply or divide depending on whether you need the total, rate, or number of units."
+    },
+    {
+      "id": "k-times-as-many",
+      "type": "keyword",
+      "term": "times as many",
+      "category": "Comparison",
+      "definition": "Describes a multiplicative comparison.",
+      "example": "Jo has 3 times as many beads as Kim. Kim has 4, so Jo has 12.",
+      "clue": "Multiplication relates the larger amount to the smaller amount.",
+      "caveat": "If Jo has 12, finding Kim requires 12 \u00f7 3, not 12 \u00d7 3."
+    }
+  ]
+}
