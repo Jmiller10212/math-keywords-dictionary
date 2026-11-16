@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "entries": [
     {
       "id": "v-estimate",
@@ -27,7 +27,7 @@
       "term": "expression",
       "category": "Algebra",
       "definition": "Numbers, variables, and operations that represent a value, without an equals sign.",
-      "example": "8 + 4 and 3 \u00d7 n are expressions.",
+      "example": "8 + 4 and 3 × n are expressions.",
       "clue": "",
       "caveat": ""
     },
@@ -46,8 +46,8 @@
       "type": "vocabulary",
       "term": "approximately",
       "category": "Estimation",
-      "definition": "Close to a value, but not necessarily exact. The symbol \u2248 means approximately equal to.",
-      "example": "19.8 \u2248 20.",
+      "definition": "Close to a value, but not necessarily exact. The symbol ≈ means approximately equal to.",
+      "example": "19.8 ≈ 20.",
       "clue": "",
       "caveat": ""
     },
@@ -107,7 +107,7 @@
       "term": "factor",
       "category": "Operations",
       "definition": "A number multiplied by another number to make a product.",
-      "example": "3 and 4 are factors of 12 because 3 \u00d7 4 = 12.",
+      "example": "3 and 4 are factors of 12 because 3 × 4 = 12.",
       "clue": "",
       "caveat": ""
     },
@@ -157,7 +157,7 @@
       "term": "equal",
       "category": "Relationships",
       "definition": "Having the same value or amount.",
-      "example": "5 + 2 and 10 \u2212 3 are equal.",
+      "example": "5 + 2 and 10 − 3 are equal.",
       "clue": "",
       "caveat": ""
     },
@@ -187,7 +187,7 @@
       "term": "fewer",
       "category": "Comparison",
       "definition": "A smaller number of items.",
-      "example": "Mia has 3 fewer stickers than Leo. Leo has 10. Mia has 10 \u2212 3 = 7.",
+      "example": "Mia has 3 fewer stickers than Leo. Leo has 10. Mia has 10 − 3 = 7.",
       "clue": "Often describes a subtraction or comparison relationship.",
       "caveat": "If Mia has 7 and that is 3 fewer than Leo, find Leo with 7 + 3 = 10."
     },
@@ -197,7 +197,7 @@
       "term": "difference",
       "category": "Comparison",
       "definition": "How far apart two amounts are.",
-      "example": "There are 12 blue beads and 8 red beads. The difference is 12 \u2212 8 = 4.",
+      "example": "There are 12 blue beads and 8 red beads. The difference is 12 − 8 = 4.",
       "clue": "Often points to the gap between two values.",
       "caveat": "A missing starting value can require addition: a number has a difference of 4 from 8; it could be 12 or 4 depending on context."
     },
@@ -207,7 +207,7 @@
       "term": "remaining",
       "category": "Change",
       "definition": "What is left after something happens.",
-      "example": "12 apples, 5 eaten: 12 \u2212 5 = 7 remaining.",
+      "example": "12 apples, 5 eaten: 12 − 5 = 7 remaining.",
       "clue": "Often appears in a take-away situation.",
       "caveat": "If 7 remain after 5 were eaten, the original amount is 7 + 5 = 12."
     },
@@ -227,9 +227,9 @@
       "term": "each",
       "category": "Equal groups",
       "definition": "Refers to every member or group individually.",
-      "example": "4 bags with 3 apples each contain 4 \u00d7 3 = 12 apples.",
+      "example": "4 bags with 3 apples each contain 4 × 3 = 12 apples.",
       "clue": "Often marks equal groups; multiplication or division may help.",
-      "caveat": "12 apples shared into 4 bags means 12 \u00f7 4 = 3 each. Read which quantity is missing."
+      "caveat": "12 apples shared into 4 bags means 12 ÷ 4 = 3 each. Read which quantity is missing."
     },
     {
       "id": "k-altogether",
@@ -259,7 +259,7 @@
       "definition": "An amount greater than another amount.",
       "example": "Sam has 4 more than Ana. Ana has 6, so Sam has 10.",
       "clue": "Often expresses an additive comparison.",
-      "caveat": "If Sam has 10, finding Ana requires 10 \u2212 4. \u201cTimes as many\u201d describes multiplication instead."
+      "caveat": "If Sam has 10, finding Ana requires 10 − 4. “Times as many” describes multiplication instead."
     },
     {
       "id": "k-per",
@@ -279,7 +279,161 @@
       "definition": "Describes a multiplicative comparison.",
       "example": "Jo has 3 times as many beads as Kim. Kim has 4, so Jo has 12.",
       "clue": "Multiplication relates the larger amount to the smaller amount.",
-      "caveat": "If Jo has 12, finding Kim requires 12 \u00f7 3, not 12 \u00d7 3."
+      "caveat": "If Jo has 12, finding Kim requires 12 ÷ 3, not 12 × 3."
+    },
+    {
+      "id": "formula-rectangle-perimeter",
+      "type": "formula",
+      "term": "Rectangle perimeter",
+      "category": "Geometry",
+      "notation": "P = 2 × (l + w)",
+      "definition": "Total distance around a rectangle.",
+      "symbols": "P = perimeter; l = length; w = width.",
+      "whenToUse": "Use for a rectangular boundary, such as fencing.",
+      "example": "l = 8 cm, w = 3 cm: P = 2 × (8 + 3) = 22 cm.",
+      "notes": "Perimeter uses linear units. Area measures coverage in square units. A parameter is a value defining a model, not a boundary length.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-square-perimeter",
+      "type": "formula",
+      "term": "Square perimeter",
+      "category": "Geometry",
+      "notation": "P = 4 × s",
+      "definition": "Total distance around a square.",
+      "symbols": "P = perimeter; s = side length.",
+      "whenToUse": "Use when all four sides are equal.",
+      "example": "s = 5 m: P = 4 × 5 = 20 m.",
+      "notes": "Perimeter measures the boundary, not the area inside.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-rectangle-area",
+      "type": "formula",
+      "term": "Rectangle area",
+      "category": "Geometry",
+      "notation": "A = l × w",
+      "definition": "Area inside a rectangle.",
+      "symbols": "A = area; l = length; w = width.",
+      "whenToUse": "Use for rectangular surface coverage.",
+      "example": "l = 8 cm, w = 3 cm: A = 8 × 3 = 24 cm².",
+      "notes": "Length times width gives area, not perimeter. Use matching length units.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-square-area",
+      "type": "formula",
+      "term": "Square area",
+      "category": "Geometry",
+      "notation": "A = s²",
+      "definition": "Area inside a square.",
+      "symbols": "A = area; s = side length; s² means s × s.",
+      "whenToUse": "Use for a square surface.",
+      "example": "s = 5 m: A = 5 × 5 = 25 m².",
+      "notes": "Area uses square units.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-triangle-area",
+      "type": "formula",
+      "term": "Triangle area",
+      "category": "Geometry",
+      "notation": "A = (b × h) ÷ 2",
+      "definition": "Area inside a triangle.",
+      "symbols": "A = area; b = base; h = perpendicular height.",
+      "whenToUse": "Use with a base and its perpendicular height.",
+      "example": "b = 10 cm, h = 6 cm: A = (10 × 6) ÷ 2 = 30 cm².",
+      "notes": "Height is not usually the sloping side; it can fall outside an obtuse triangle.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-rectangular-prism-volume",
+      "type": "formula",
+      "term": "Rectangular prism volume",
+      "category": "Measurement",
+      "notation": "V = l × w × h",
+      "definition": "Space inside a rectangular prism.",
+      "symbols": "V = volume; l = length; w = width; h = height.",
+      "whenToUse": "Use for a box with rectangular faces.",
+      "example": "l = 4 cm, w = 3 cm, h = 2 cm: V = 4 × 3 × 2 = 24 cm³.",
+      "notes": "Use matching length units. Volume uses cubic units.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-distance-rate-and-time",
+      "type": "formula",
+      "term": "Distance, rate and time",
+      "category": "Measurement",
+      "notation": "d = r × t",
+      "definition": "Distance traveled at a constant rate.",
+      "symbols": "d = distance; r = rate (speed); t = elapsed time.",
+      "whenToUse": "Use for constant speed or an average speed over the whole interval.",
+      "example": "r = 60 km/h, t = 2 h: d = 60 × 2 = 120 km.",
+      "notes": "Match time units to the rate. Distance is not displacement.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-mean",
+      "type": "formula",
+      "term": "Mean",
+      "category": "Arithmetic",
+      "notation": "Mean = sum of values ÷ number of values",
+      "definition": "Arithmetic average of a set of values.",
+      "symbols": "Sum = values added together; number = count of values.",
+      "whenToUse": "Use to find an equal-share average of numerical data.",
+      "example": "For 4, 6, 8: mean = (4 + 6 + 8) ÷ 3 = 6.",
+      "notes": "At least one value is required. Extreme values affect the mean.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-percentage",
+      "type": "formula",
+      "term": "Percentage",
+      "category": "Arithmetic",
+      "notation": "Percentage = (part ÷ whole) × 100%",
+      "definition": "What percent a part represents of a whole.",
+      "symbols": "Part = amount compared; whole = reference total.",
+      "whenToUse": "Use when comparing a part to a nonzero whole.",
+      "example": "15 out of 60: (15 ÷ 60) × 100% = 25%.",
+      "notes": "To find a part, use part = (p ÷ 100) × whole, where p is the numeric percent value.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-circle-circumference",
+      "type": "formula",
+      "term": "Circle circumference",
+      "category": "Geometry",
+      "notation": "C = 2 × π × r = π × d",
+      "definition": "Distance around a circle.",
+      "symbols": "C = circumference; r = radius; d = diameter = 2r; π ≈ 3.14159.",
+      "whenToUse": "Use for the boundary length of a circle.",
+      "example": "r = 3 cm: C = 6π cm ≈ 18.85 cm.",
+      "notes": "Circumference is a circle’s perimeter. Use linear units and round at the end.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "formula-circle-area",
+      "type": "formula",
+      "term": "Circle area",
+      "category": "Geometry",
+      "notation": "A = π × r²",
+      "definition": "Area inside a circle.",
+      "symbols": "A = area; r = radius; π ≈ 3.14159; r² = r × r.",
+      "whenToUse": "Use for circular surface coverage.",
+      "example": "r = 3 cm: A = 9π cm² ≈ 28.27 cm².",
+      "notes": "Halve the diameter to find the radius first. Area uses square units.",
+      "clue": "",
+      "caveat": ""
     }
   ]
 }

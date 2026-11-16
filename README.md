@@ -1,6 +1,6 @@
 # Math Keywords Dictionary
 
-A standalone static PWA, separate from Math Practice Hub. No build, account, server API, fonts, analytics, or network dependencies are needed by the app. Starter library: 18 vocabulary terms and 10 word problem keywords. Keyword cards always include an operation clue and a caveat.
+A standalone static PWA, separate from Math Practice Hub. No build, account, server API, fonts, analytics, or network dependencies are needed by the app. Starter library: 18 vocabulary terms, 10 word problem keywords, and 11 math formulas. Keyword cards always include an operation clue and a caveat.
 
 ## Preview locally
 
@@ -25,7 +25,7 @@ Pages is configured to deploy from main at the repository root. Commit and push 
 
 Entries are saved only in this browser profile and origin under `math-keywords-dictionary:v1`. They do not automatically sync with another computer or profile. Clearing site data removes entries and the stored replacement backup. Use Manage & transfer → Download JSON regularly. GitHub sees only the shipped starter library, not your browser's edited entries. Sites sharing the same GitHub Pages origin share browser storage; use this single dictionary deployment per origin or change STORE if hosting another independent copy.
 
-JSON exports use `{ "schemaVersion": 1, "exportedAt": "ISO timestamp", "entries": [...] }`. Each entry has string fields `id`, `type` (`vocabulary` or `keyword`), `term`, `definition`, `category`, `example`, `clue`, `caveat`. ID, term, category, definition are required. Keywords require clue and caveat. IDs allow letters, numbers, underscores, hyphens; keep them stable. Optional text fields default to empty strings. Unknown properties are stripped. Limits: 5 MB import file, 10,000 entries, 4,000 characters per text field, 100-character IDs. Future schema versions and malformed or internally duplicated files are rejected without changing the library.
+JSON exports use `{ "schemaVersion": 2, "exportedAt": "ISO timestamp", "entries": [...] }`. Each entry has string fields `id`, `type` (`vocabulary`, `keyword`, or `formula`), `term`, `definition`, `category`, `example`, `clue`, `caveat`. ID, term, category, definition are required. Keywords require clue and caveat. Formulas require `notation`, `symbols` (symbol meanings), `whenToUse`, and `example` (worked example). `term` is the formula name and `definition` explains what it calculates; `notes` is optional. All fields are strings. Version 1 exports remain importable; new exports use version 2. IDs allow letters, numbers, underscores, hyphens; keep them stable. Optional text fields default to empty strings. Unknown properties are stripped. Limits: 5 MB import file, 10,000 entries, 4,000 characters per text field, 100-character IDs. Schema versions other than 1 and 2 and malformed or internally duplicated files are rejected without changing the library.
 
 Merge retains existing entries, adds new IDs, and updates matching IDs. The same normalized term in the same type with different IDs, or a changed term/type for an existing ID, blocks the entire merge. Fix the file or edit the entry in the app. The same word can appear once in each entry type. Preview counts additions, updates, unchanged entries and removals. Replace uses exactly the incoming list, including an intentionally empty list. Before replacement the app saves the previous library to a separate browser key and downloads it. If saving that backup fails, Replace stops. Download pre-replace backup retrieves the latest one; it can be restored with Import → Replace. Browsers may prompt for automatic downloads: retain the backup file. A full or blocked localStorage reports an error rather than silently claiming success.
 
@@ -42,3 +42,9 @@ Service worker scope is this project folder; its cache uses a dictionary-specifi
 index.html / style.css / app.js: accessible UI and persistence. core.js: schema validation and import planning. seed.json: starter library and example export format. sw.js: offline shell. manifest.webmanifest / icons: installation assets. tests: data and browser checks. No existing Hub source files are required or modified.
 
 Official setup references: [GitHub Pages publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and [Chrome web apps](https://support.google.com/chrome/answer/9658361).
+
+## Formula release
+
+The Math Formulas tab includes perimeter, area, volume, distance, mean, percentage and circle formulas. The editor adapts labels and required fields to the selected type. Categories accept your own text and suggest Geometry, Arithmetic, Measurement and Algebra. Search includes notation, symbol meanings, usage and notes. Print includes every formula detail in the filtered view.
+
+On the first upgrade of a version 1 saved library, missing starter formulas are added without overwriting existing IDs or same-type names; the resulting library is saved as version 2 under the existing storage key. Subsequent reloads preserve deletions. Importing an older file uses its contents exactly for Replace, or the normal conflict rules for Merge. Export before updating if you want your own additional backup. The offline cache release is v2; close all dictionary windows and reopen online to receive it.
