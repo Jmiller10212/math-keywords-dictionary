@@ -47,6 +47,13 @@ Official setup references: [GitHub Pages publishing source](https://docs.github.
 
 The Math Formulas tab includes perimeter, area, volume, distance, mean, percentage and circle formulas. The editor adapts labels and required fields to the selected type. Categories accept your own text and suggest Geometry, Arithmetic, Measurement and Algebra. Search includes notation, symbol meanings, usage and notes. Print includes every formula detail in the filtered view.
 
-On the first upgrade of a version 1 saved library, missing starter formulas are added without overwriting existing IDs or same-type names; the resulting library is saved as version 2 under the existing storage key. Subsequent reloads preserve deletions. Importing an older file uses its contents exactly for Replace, or the normal conflict rules for Merge. Export before updating if you want your own additional backup. The offline cache release is v4; reload online to receive it.
+On the first upgrade of a version 1 saved library, missing starter formulas are added without overwriting existing IDs or same-type names; the resulting library is saved as version 2 under the existing storage key. Subsequent reloads preserve deletions. Importing an older file uses its contents exactly for Replace, or the normal conflict rules for Merge. Export before updating if you want your own additional backup. The offline cache release is v5; reload online to receive it.
 
 The formulas-and-geometry-1 content revision adds missing formula starters and nine geometry/algebra vocabulary entries once to existing libraries, including version 2 libraries that missed the earlier formula upgrade. Existing IDs and same-type names are preserved. A seedRevision marker prevents deleted entries from being restored on every reload. Imports applied by the app save the current revision, so intentional Replace operations remain exact.
+
+
+## Shapes study library
+
+Shapes sits immediately beside Math Formulas. Study 13 flat shapes and 7 solids through SVG illustrations, searchable names/properties/examples, and a 2D/3D filter. Open a card for counts, distinguishing properties, formulas with symbol meanings, and examples. Regular polygon drawings are labeled as regular; trapezoid definition differences and curved-solid counting conventions are explained. Dashed lines indicate hidden edges or surface guides.
+
+The built-in library in shapes.js is independent of editable dictionary entries. JSON remains schema version 2 with vocabulary, keyword and formula types only; imports and replacements do not remove the Shapes library. No personal entries are changed by this release. Cache v5 includes shapes.js for offline study. Reload online to receive the update. No identification practice mode is included.
