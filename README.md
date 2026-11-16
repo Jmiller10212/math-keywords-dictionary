@@ -1,6 +1,6 @@
 # Math Keywords Dictionary
 
-A standalone static PWA, separate from Math Practice Hub. No build, account, server API, fonts, analytics, or network dependencies are needed by the app. Starter library: 18 vocabulary terms, 10 word problem keywords, and 11 math formulas. Keyword cards always include an operation clue and a caveat.
+A standalone static PWA, separate from Math Practice Hub. No build, account, server API, fonts, analytics, or network dependencies are needed by the app. Starter library: 27 vocabulary terms, 10 word problem keywords, and 11 math formulas. Keyword cards always include an operation clue and a caveat.
 
 ## Preview locally
 
@@ -47,4 +47,6 @@ Official setup references: [GitHub Pages publishing source](https://docs.github.
 
 The Math Formulas tab includes perimeter, area, volume, distance, mean, percentage and circle formulas. The editor adapts labels and required fields to the selected type. Categories accept your own text and suggest Geometry, Arithmetic, Measurement and Algebra. Search includes notation, symbol meanings, usage and notes. Print includes every formula detail in the filtered view.
 
-On the first upgrade of a version 1 saved library, missing starter formulas are added without overwriting existing IDs or same-type names; the resulting library is saved as version 2 under the existing storage key. Subsequent reloads preserve deletions. Importing an older file uses its contents exactly for Replace, or the normal conflict rules for Merge. Export before updating if you want your own additional backup. The offline cache release is v3; reload online to receive it.
+On the first upgrade of a version 1 saved library, missing starter formulas are added without overwriting existing IDs or same-type names; the resulting library is saved as version 2 under the existing storage key. Subsequent reloads preserve deletions. Importing an older file uses its contents exactly for Replace, or the normal conflict rules for Merge. Export before updating if you want your own additional backup. The offline cache release is v4; reload online to receive it.
+
+The formulas-and-geometry-1 content revision adds missing formula starters and nine geometry/algebra vocabulary entries once to existing libraries, including version 2 libraries that missed the earlier formula upgrade. Existing IDs and same-type names are preserved. A seedRevision marker prevents deleted entries from being restored on every reload. Imports applied by the app save the current revision, so intentional Replace operations remain exact.

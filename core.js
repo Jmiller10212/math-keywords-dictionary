@@ -1,4 +1,5 @@
 export const SCHEMA_VERSION = 2;
+export const SEED_REVISION = "formulas-and-geometry-1";
 export const normalize = s => s.normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase();
 export const key = e => e.type + ':' + normalize(e.term);
 const fields = ['id','type','term','definition','category','example','clue','caveat','notation','symbols','whenToUse','notes'];
@@ -17,7 +18,7 @@ export function validate(data) {
   ids.add(e.id); terms.add(key(e)); return e;
  });
 }
-export const envelope = entries => ({schemaVersion:SCHEMA_VERSION, exportedAt:new Date().toISOString(), entries});
+export const envelope = entries => ({schemaVersion:SCHEMA_VERSION, seedRevision:SEED_REVISION, exportedAt:new Date().toISOString(), entries});
 export function planImport(current,incoming,mode) {
  if (!['merge','replace'].includes(mode)) throw Error('Invalid import mode.');
  if (mode === 'replace') return {entries:incoming, added:incoming.filter(e=>!current.some(c=>c.id===e.id)).length, updated:incoming.filter(e=>current.some(c=>c.id===e.id && JSON.stringify(c)!==JSON.stringify(e))).length, removed:current.filter(c=>!incoming.some(e=>e.id===c.id)).length, conflicts:[], unchanged:incoming.filter(e=>current.some(c=>JSON.stringify(c)===JSON.stringify(e))).length};

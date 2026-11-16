@@ -434,6 +434,96 @@
       "notes": "Halve the diameter to find the radius first. Area uses square units.",
       "clue": "",
       "caveat": ""
+    },
+    {
+      "id": "v-geometry-perimeter",
+      "type": "vocabulary",
+      "term": "perimeter",
+      "category": "Geometry",
+      "definition": "The total distance around the outside boundary of a flat shape.",
+      "example": "A rectangle 8 cm long and 3 cm wide has perimeter 8 + 3 + 8 + 3 = 22 cm. Perimeter is not area.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-geometry-area",
+      "type": "vocabulary",
+      "term": "area",
+      "category": "Geometry",
+      "definition": "The amount of surface inside a flat shape, measured in square units.",
+      "example": "An 8 cm by 3 cm rectangle has area 8 × 3 = 24 cm². This is coverage, not boundary length.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-geometry-circumference",
+      "type": "vocabulary",
+      "term": "circumference",
+      "category": "Geometry",
+      "definition": "The perimeter of a circle: the distance around it.",
+      "example": "A circle with radius 3 cm has circumference 2 × π × 3 = 6π cm, about 18.85 cm.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-geometry-radius",
+      "type": "vocabulary",
+      "term": "radius",
+      "category": "Geometry",
+      "definition": "The distance from the center of a circle to its boundary.",
+      "example": "A circle with diameter 10 cm has radius 5 cm.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-geometry-diameter",
+      "type": "vocabulary",
+      "term": "diameter",
+      "category": "Geometry",
+      "definition": "The distance across a circle through its center; twice the radius.",
+      "example": "A circle with radius 4 cm has diameter 8 cm.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-geometry-parameter",
+      "type": "vocabulary",
+      "term": "parameter",
+      "category": "Algebra",
+      "definition": "A value used to define a model, rule, or family of shapes. It is a different word from perimeter.",
+      "example": "In y = m × x + b, m and b can be parameters that set the slope and starting value of a line. Perimeter means distance around a shape.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-geometry-volume",
+      "type": "vocabulary",
+      "term": "volume",
+      "category": "Geometry",
+      "definition": "The amount of three-dimensional space an object occupies or a container holds, measured in cubic units.",
+      "example": "A box 4 cm by 3 cm by 2 cm has volume 24 cm³.",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-geometry-base",
+      "type": "vocabulary",
+      "term": "base",
+      "category": "Geometry",
+      "definition": "A chosen side of a flat shape or face of a solid used as a reference for a measurement.",
+      "example": "For a triangle with base 10 cm and perpendicular height 6 cm, area is (10 × 6) ÷ 2 = 30 cm².",
+      "clue": "",
+      "caveat": ""
+    },
+    {
+      "id": "v-geometry-height",
+      "type": "vocabulary",
+      "term": "height",
+      "category": "Geometry",
+      "definition": "The perpendicular distance from a chosen base to the opposite vertex, side, or face.",
+      "example": "A triangle’s height must meet its base (or its extended base line) at a right angle; it is not usually the sloping side.",
+      "clue": "",
+      "caveat": ""
     }
   ]
 }
