@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 test('shape study, filters, keyboard details, mobile and offline preserve dictionary',async({page,context})=>{
- const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');await expect(page.locator('.card')).toHaveCount(48);
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');await expect(page.locator('.card')).toHaveCount(49);
  const original=await page.evaluate(()=>localStorage.getItem('math-keywords-dictionary:v1'));
  expect(await page.locator('[data-type=formula]').evaluate(e=>e.nextElementSibling.dataset.type)).toBe('shapes');
  await page.getByRole('button',{name:'Shapes',exact:true}).click();await expect(page.locator('.shape-card')).toHaveCount(20);await expect(page.locator('#cards')).toBeHidden();

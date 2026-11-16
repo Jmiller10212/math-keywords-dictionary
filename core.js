@@ -1,5 +1,5 @@
 export const SCHEMA_VERSION = 2;
-export const SEED_REVISION = "formulas-and-geometry-1";
+export const SEED_REVISION = "commutative-multiplication-1";
 export const normalize = s => s.normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase();
 export const key = e => e.type + ':' + normalize(e.term);
 const fields = ['id','type','term','definition','category','example','clue','caveat','notation','symbols','whenToUse','notes'];

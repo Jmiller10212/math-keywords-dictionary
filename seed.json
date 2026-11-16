@@ -524,6 +524,16 @@
       "example": "A triangle’s height must meet its base (or its extended base line) at a right angle; it is not usually the sloping side.",
       "clue": "",
       "caveat": ""
+    },
+    {
+      "id": "v-commutative-multiplication",
+      "type": "vocabulary",
+      "term": "Commutative Property of Multiplication",
+      "category": "Arithmetic",
+      "definition": "Changing the order of factors does not change the product. Formula: a × b = b × a. Addition is commutative too, but subtraction and division generally are not.",
+      "example": "6 × 2 = 2 × 6 = 12. 4 × 7 = 7 × 4 = 28.",
+      "clue": "",
+      "caveat": ""
     }
   ]
 }
